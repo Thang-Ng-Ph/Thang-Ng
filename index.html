@@ -3,62 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Store</title>
+    <title>Eco Fruits</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="container">
-            <h1>Welcome to PNO Fashion Store</h1>
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="Eco Fruits Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#men">Thời Trang Nam</a></li>
-            <li><a href="#women">Thời Trang Nữ</a></li>
-            <li><a href="#accessories">Phụ Kiện</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <section id="men" class="product-category">
-            <h2>Thời Trang Nam</h2>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Fresh Organic Fruits</h1>
+            <p>Enjoy the taste of nature</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
             <div class="product-grid">
                 <div class="product-item">
-                    <img src="images/men1.jpg" alt="Men's Product 1">
-                    <h3>Áo Sơ Mi Nam</h3>
-                    <p>Giá: 500,000 VND</p>
-                    <p>Mô tả: Áo sơ mi nam phong cách Hàn Quốc.</p>
+                    <img src="images/product1.jpg" alt="Product 1">
+                    <h3>Product Name</h3>
+                    <p>Description of the product.</p>
+                    <p>Price: $10</p>
                 </div>
                 <!-- Thêm nhiều sản phẩm khác tương tự -->
             </div>
-        </section>
-        <section id="women" class="product-category">
-            <h2>Thời Trang Nữ</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="images/women1.jpg" alt="Women's Product 1">
-                    <h3>Đầm Nữ</h3>
-                    <p>Giá: 700,000 VND</p>
-                    <p>Mô tả: Đầm nữ sang trọng cho các buổi tiệc.</p>
-                </div>
-                <!-- Thêm nhiều sản phẩm khác tương tự -->
-            </div>
-        </section>
-        <section id="accessories" class="product-category">
-            <h2>Phụ Kiện</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="images/accessory1.jpg" alt="Accessory Product 1">
-                    <h3>Kính Mát</h3>
-                    <p>Giá: 300,000 VND</p>
-                    <p>Mô tả: Kính mát thời trang phong cách hiện đại.</p>
-                </div>
-                <!-- Thêm nhiều sản phẩm khác tương tự -->
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Information about the company.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 PNO Fashion Store. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Eco Fruits. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
